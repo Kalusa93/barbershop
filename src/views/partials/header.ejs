@@ -1,0 +1,72 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4b3437fcea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/header.css">
+    <title>VENNER Vinoteca</title>
+</head>
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <a href="/"><img src="/images/venner-logo3.png" alt="Logo de Venner"></a>
+        </div>
+
+        <form action="/search" method="GET" class="search-bar">
+            <input type="search" name="keywords" id="keywords" placeholder="Buscar producto">
+            <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+
+        <div class="icons">
+            <div class="cart">
+                <a href="/cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <% if (locals.isLogged) { %>
+                <div class="welcome">¡Bienvenido <%= locals.userLogged.name %>!</div>
+                <div class="dropdown-menu">
+                    <figure>
+                        <img src="/images/users/<%= locals.userLogged.image %>" alt="">
+                    </figure>
+                    <div class="dropdown-content">
+                        <a href="/users/profile">Profile</a>
+                        <a href="/users/logout">Logout</a>
+                    </div>
+                </div>
+            <% } else { %>
+                <div class="user">
+                    <a href="/users/login"><i class="fa-solid fa-circle-user"></i></a>
+                </div>
+            <% } %>
+
+            <div class="burger">
+                <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="check">
+
+    <nav>
+        <ul class="nav-bar">
+            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+
+            <% if (locals.isLogged) { %>
+                <li><a href="/users/profile"><img src="/images/users/<%= locals.userLogged.image %>" alt=""></a></li>
+                <li class="ocultar"><a href="/">HOME</a></li>
+            <% } %>
+
+            <li><a href="/products">PRODUCTOS</a></li>
+            <li><a href="/products/national">VINOS ARGENTINOS</a></li>
+            <li><a href="/products/imported">VINOS IMPORTADOS</a></li>
+            <li><a href="/us">NOSOTROS</a></li>
+            <li><a href="/contact">CONTACTO</a></li>
+
+            <% if (locals.isLogged) { %>
+                <li class="ocultar"><a href="/cart">CARRITO</a></li>
+                <li class="ocultar"><a href="/users/logout">CERRAR SESIÓN</a></li>
+            <% } %>
+        </ul>
+    </nav>
+</header>

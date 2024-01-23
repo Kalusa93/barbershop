@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+  <%- include('../partials/head.ejs', {title: 'Carrito', css:
+  'productcart.css'}) %>
+
+  <body>
+    <%- include('../partials/header.ejs') %>
+
+    <main>
+      <h2>Tu Carrito de Compras</h2>
+      <h4>Producto</h4>
+      <ul type="none" class="tabla">
+        <li>Producto</li>
+        <li>Detalle</li>
+        <li>Cantidad</li>
+        <li>Precio</li>
+      </ul>
+      <article>
+        <div>
+          <img src="/images/products/arcangel.png" alt="Vino1" />
+        </div>
+        <div>
+          <p>
+            ARCANGEL MIKHAIL 750 cc<br />
+            Código de producto: 1009551<br />
+            LOS ARCANGELES
+          </p>
+        </div>
+        <div>
+          <select name="select" id="cantidad">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div>
+          <p>$ 72899.91</p>
+        </div>
+      </article>
+      <div class="subtotal">
+        <h3>Subtotal</h3>
+        <p>$ 72899,91</p>
+      </div>
+      <div class="botones">
+        <button type="submit" name="continuar" alt="#">CONTINUAR COMPRA</button>
+        <button type="submit" name="finalizar" alt="#">FINALIZAR COMPRA</button>
+      </div>
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+  </body>
+</html>

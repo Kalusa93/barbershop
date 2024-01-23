@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include('../partials/head.ejs', {title: "Iniciar Sesion", css: "login.css"}) %>
+
+<body>
+
+    <section class="left-section">
+
+        <h2 class="txt1"><a href="/">VENNER</a></h2>
+
+        <h3 class="txt2">Wine Store</h3>
+
+        <i class="fa-regular fa-circle-user icon-user"></i>
+
+        <p class="iniciar-sesion">INICIA SESIÓN</p>
+
+        <form action="/users/login" method="post" class="form">
+
+            <div class="campo-container">
+                <label for="email">CORREO</label>
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="ejemplo@email.com" name="email" id="email">
+                </div>
+               
+                <span><%= locals.errors && errors.email? errors.email.msg : "" %></span>
+              
+            </div>
+
+            <div class="campo-container">
+                <label for="password">CONTRASEÑA</label>
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" id="password">
+                    <i class="fa-regular fa-eye-slash icon-eye"></i>
+                </div>
+                <span><%= locals.errors && errors.password? errors.password.msg : "" %> </span>
+                <section class="container-all">
+                    <section class="container-remember">
+                        <input type="checkbox" name="remember">
+                        <p>Recordarme</p>
+                    </section>
+
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </section>
+            </div>
+
+            <button type="submit" class="btn">INICIAR SESIÓN</button>
+        </form>
+
+
+        <p class="tienes-cuenta">¿No tienes una cuenta? <a href="/users/register">Regístrate</a></p>
+
+        <div class="redes">
+            <h2>SIGUENOS</h2>
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="right-section">
+        <p>Bienvenidos</p>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+    </section>
+</body>
+
+</html>

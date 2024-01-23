@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Mohave, sans-serif;
+}
+
+/* ================= */
+/* ESTILOS AL FOOTER */
+/* ================= */
+
+footer {
+  background-color: #5E0D26;
+  color: #FAF7EE;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 0px;
+}
+
+.container div {
+  margin-top: 20px;
+  width: 200px;
+}
+
+.container div ul {
+  list-style-type: none;
+}
+
+.container div ul li {
+  padding: 5px;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.social-networks a {
+  font-size: 22px;
+  text-decoration: none;
+  color: #F5DEBF;
+  padding: 5px;
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/* ============= */
+/* MEDIA QUERIES */
+/* ============= */
+
+@media (min-width: 768px) {
+  
+}

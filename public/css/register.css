@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mohave', sans-serif;
+}
+#main-register{
+    margin: 5% 5% 5% 5%;
+}
+
+legend{
+    text-align: center;
+    color: #5E0D26;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 0.5em;
+    margin-bottom: 1em;   
+}
+#formulario{
+    border: 1px solid #E1E1E1;
+    display: flex;
+    flex-direction: column;   
+    padding: 1.2em; 
+    box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+    
+    
+}
+
+.div-form{
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border: 1px solid #5E0D26;
+    margin-bottom: 2em;
+}
+.div-form label{
+    display: flex;
+    flex-wrap: wrap;
+    color:#5E0D26;
+    font-weight: 600;
+}
+.div-form input{
+    display: flex;
+    flex-wrap: wrap;
+    border:1px solid #5E0D26;
+    padding: 0.7em;
+    
+}
+
+#button-form{
+    background-color: #5E0D26;
+    padding: 0.5em;
+    color: #ebebeb;
+    border: #5E0D26;
+    border-radius: 7px;
+    font-size: large;
+    font-weight: 500;
+    width: 20%;
+    margin:auto;
+    
+}
+#p-register{
+    color:#5E0D26;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 2em;
+}
+#p-register a{
+    text-decoration: none;
+    color: #5E0D26;
+}
+
+.feedback {
+    color: rgb(239, 70, 70);
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+@media (min-width: 460px){
+    
+}
+@media (min-width: 780px){
+.bottom-menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ebebeb;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.bottom-menu li {
+    display: inline; /* Hace que los elementos de la lista se muestren en línea */
+    margin: 0 50px; /* Espacio entre los elementos del menú */
+}
+
+.bottom-menu a {
+    text-decoration: none; /* Elimina la decoración de enlace subrayada */
+    color: #5E0D26; /* Color del texto de enlace */
+    font-size: 20px; /* Tamaño de fuente de los enlaces */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.login button {
+    background-color: #b3127c; /* Color de fondo del botón */
+    color: #fff; /* Color de texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+    font-weight: bold;
+    margin-right: 100px;
+    font-size: 24px;
+}
+
+.login-items {
+    margin-top: 30px;
+}
+
+.fas.fa-user {
+    color: #fff;
+}
+
+#banner img {
+    width: 100%; /* Ancho del 100% del elemento padre (el banner) */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+
+#main-register{
+    margin: 5% 20% 5% 20%;
+    
+}
+#p-register{
+    color:#5E0D26;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 2em;
+}
+#p-register a{
+    text-decoration: none;
+    color: #5E0D26;
+}
+}

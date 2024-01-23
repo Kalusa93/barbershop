@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Mohave, sans-serif;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.edit-product {
+    margin: 30px 0;
+    border: 1px solid #E1E1E1;  
+    padding: 1.2em; 
+    box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+}
+
+.edit-product h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px 0px;
+    color: #5E0D26;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.edit-product-field {
+    padding: 1em;
+    border: 1px solid #5E0D26;
+    margin-bottom: 2em;
+}
+
+.edit-product form label {
+    display: block;
+    color:#5E0D26;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.edit-product form input {
+    border:1px solid #5E0D26;
+    padding: 10px;
+    width: 100%;
+}
+
+.buttons .edit {
+    display: block;
+    margin: 20px auto;
+    color: #ebebeb;
+    background-color: #5E0D26;
+    border: none;
+    padding: 15px;
+    width: 50%;
+    max-width: 240px;
+    border-radius: 7px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+    main {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .edit-product h1 {
+        font-size: 32px;
+    }
+}

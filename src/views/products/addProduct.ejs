@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head.ejs', {title: 'Agregar Productos', css:
+  'addProduct.css'}) %>
+
+  <body>
+    
+    <%- include('../partials/header.ejs') %>
+
+    <main>
+      <div class="add-product">
+        <h1>AGREGA UN PRODUCTO!</h1>
+        <form
+          action="/products/add"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="add-product-field">
+            <label for="category">CATEGORIA: </label>
+            <select name="category" id="">
+              <option value="national">Vino Argentino</option>
+              <option value="international">Vino Importado</option>
+            </select>
+            <!-- <input type="text" name="category" id="category" required> -->
+          </div>
+
+          <div class="add-product-field">
+            <label for="name">NOMBRE: </label>
+            <input type="text" name="name" id="name" required />
+          </div>
+
+          <div class="add-product-field">
+            <label for="varieties">VARIEDAD: </label>
+            <input
+              type="text"
+              name="varieties"
+              id="varieties"
+              placeholder="Variedades de uva, cepas..."
+            />
+          </div>
+
+          <div class="add-product-field">
+            <label for="origin">ORIGEN: </label>
+            <input
+              type="text"
+              name="origin"
+              id="origin"
+              placeholder="Region, provincia, pais..."
+            />
+          </div>
+
+          <div class="add-product-field">
+            <label for="description">DESCRIPCION: </label>
+            <input type="text" name="description" id="description" required />
+          </div>
+
+          <div class="add-product-field">
+            <label for="price">PRECIO (ARS): </label>
+            <input
+              type="number"
+              name="price"
+              id="price"
+              placeholder="$"
+              required
+            />
+          </div>
+
+          <div class="add-product-field">
+            <label for="image">IMAGEN: </label>
+            <input
+              type="file"
+              name="image"
+              id="image"
+              accept="image/png, image/jpeg"
+            />
+          </div>
+
+          <div class="add-product-field">
+            <label for="tall">TAMAÑO (cm<sup>3</sup>, mL): </label>
+            <input type="number" name="tall" id="tall" />
+          </div>
+
+          <div class="buttons">
+            <button type="submit" class="add">AGREGAR</button>
+            <button type="reset" class="reset">BORRAR</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+  </body>
+</html>

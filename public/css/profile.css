@@ -1,0 +1,92 @@
+#main-profile{
+    margin: 3% 5% 5% 5%;
+}
+
+#container{
+    border: 1px solid #E1E1E1;
+    padding: 1.2em;
+    box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+}
+
+legend{
+    text-align: center;
+    color: #5E0D26;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 0.5em;
+    margin-bottom: 1em;   
+}
+
+.img-user{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.img-profile {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colum1{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    border: 1px solid #5E0D26;
+    color:#5E0D26;
+}
+
+.colum2{
+    display: flex;
+    align-items: flex-end;
+    padding: 1em;
+    margin-bottom: 10px;
+}
+
+.edit-user{
+    float: right!important;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
+.shopping-history{
+    height: 80%;
+    text-align: center;
+}
+
+.btn, .edit-user {
+    margin-top: 8px;
+    font-size: 14px;
+    padding: 8px 4px;
+    color: #ffffff;
+    background-color: #5E0D26;
+    border-radius: 8px;
+    text-align: center;
+}
+
+h4 {
+    padding-top: 15px;
+}
+
+#dato{
+    font-size: 15px;
+}
+
+@media (min-width: 768px){
+    .info{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }    
+    .btn{
+        width: 450px;
+    }
+}

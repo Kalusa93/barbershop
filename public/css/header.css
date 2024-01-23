@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Mohave, sans-serif;
+}
+
+/* ================= */
+/* ESTILOS AL HEADER */
+/* ================= */
+
+header {
+    background-color: #5E0D26;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.icons {
+    display: flex;
+}
+
+.cart,
+.user,
+.burger {
+    margin: auto 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.icons .fa-solid {
+    width: 40px;
+    color: #FAF7EE;
+}
+
+.logo {
+    width: 40%;
+    max-width: 250px;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 250px;
+}
+
+.search-bar {
+    display: none;
+}
+
+.welcome {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #FAF7EE;
+    /* border: 1px red dashed; */
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu figure img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #FAF7EE;
+    color: #5E0D26;
+    font-weight: bold;
+    z-index: 1;
+    right: 0px;
+    padding: 5px 20px;
+    display: none;
+}
+
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+/* ====================== */
+/* ESTILOS AL BURGER MENU */
+/* ====================== */
+
+.open-menu,
+.close-menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.close-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 20px 0;
+    font-size: 2rem;
+}
+
+.nav-bar {
+    list-style: none;
+    background-color: #FAF7EE;
+    color: #5E0D26;
+    opacity: 95%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: fixed;
+    height: 100vh;
+    width: 80%;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    justify-content: space-evenly;
+}
+
+.nav-bar li img {
+
+    height: 20vh;
+    border-radius: 50%;
+    opacity: 100%;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #5E0D26;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~nav .nav-bar {
+    right: 0;
+}
+
+/* ============= */
+/* MEDIA QUERIES */
+/* ============= */
+
+@media (min-width: 768px) {
+
+    .cart,
+    .user {
+        padding: 10px;
+        margin: auto 0px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .search-bar input {
+        font-size: 16px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        background-color: #F5DEBF;
+        width: 80%;
+        max-width: 300px;
+        outline: none;
+        padding-left: 12px;
+    }
+
+    .search-bar button {
+        font-size: 16px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        background-color: #F5DEBF;
+        float: right;
+    }
+
+    /* ====================== */
+    /* ESTILOS AL BURGER MENU */
+    /* ====================== */
+    .burger {
+        display: none;
+    }
+
+    .nav-bar {
+        list-style: none;
+        background-color: #F5DEBF;
+        color: #5E0D26;
+        font-weight: bold;
+        letter-spacing: 2px;
+        position: static;
+        height: 48px;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav-bar a {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .nav-bar .close-menu {
+        display: none
+    }
+
+    .search-bar {
+        display: block;
+        margin: auto 0px;
+        background-color: #F5DEBF;
+        border-radius: 10px;
+        width: 30%;
+    }
+
+    .nav-bar img {
+        display: none;
+    }
+
+    .ocultar {
+        display: none;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        display: inline-block;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #FAF7EE;
+        /* border: 1px red dashed; */
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head.ejs', {title: 'Detalle de Producto' , css: 'productDetail.css' }) %>
+
+  <body>
+
+    <%- include('../partials/header.ejs') %>
+
+      <main>
+        <section class="show-img-product">
+          <div>
+            <div class="img-product">
+              <img src="/images/products/<%= product.image %>" alt="" />
+            </div>
+            <div>
+
+            </div>
+        </section>
+        <section class="description-product">
+          <div>
+            <h3>
+              <%= product.name + ' ' + product.tall%>CC.
+            </h3>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="details">
+            <p>
+              <strong>Tipo de Vino:</strong>
+              <%= product.varieties %>
+            </p>
+            <p>
+              <strong>Origen:</strong>
+              <%= product.origin %>
+            </p>
+            <p>
+              <strong>Descripcion:</strong>
+              <%= product.description %>
+            </p>
+          </div>
+
+          <button type="submit" id="buy-now">Comprar ahora!</button>
+          <button type="" id="add-cart">Agregar al carro!</button>
+          <a href="/products/edit/<%= product.id %>">Editar</a>
+          <form action="/products/delete/<%= product.id %>?_method=delete" method="post">
+            <button type="submit">Eliminar</button>
+          </form>
+        </section>
+
+      </main>
+
+      <%- include('../partials/footer.ejs') %>
+
+  </body>
+
+</html>

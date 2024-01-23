@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #FAF7EE; */
+    background-color: #F5DEBF;
+    color: #5E0D26;
+    font-family: 'Mohave', sans-serif;
+}
+
+.left-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt1 {
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 92px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+.txt1 a {
+    color: #5E0D26;
+    text-decoration: none;
+}
+
+.txt2 {
+    font-size: 18px;
+    margin-top: -10px;
+    letter-spacing: 4px;
+}
+
+.icon-user {
+    display: none;
+}
+
+.iniciar-sesion {
+    margin-top: 34px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-container {
+    margin-top: 20px;
+}
+
+.campo-container label {
+    font-size: 24px;
+}
+
+.campo-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #5E0D26;
+    border-radius: 10px;
+    background-color: #FAF7EE;
+}
+
+.campo-container div i {
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.icon-eye {
+    margin-right: 5px;
+}
+
+.campo-container div input {
+    width: 100%;
+    padding: 10px;
+    margin-left: 4px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.campo-container a {
+    display: block;
+    margin-top: 8px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: right;
+    color: #5E0D26;;
+    font-weight: bold;
+}
+
+.container-all {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.container-remember {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.container-remember input {
+    transform: scale(1.2);
+}
+.container-remember p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 12px 8px;
+    color: #ffffff;
+    background-color: #5E0D26;
+    border-radius: 8px;
+    width: 250px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:hover.btn {
+    background-color: white;
+    color: #5E0D26;
+    cursor: pointer;
+}
+
+
+.tienes-cuenta {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;;
+}
+
+.tienes-cuenta a{
+    text-decoration: none;
+    color: #5E0D26;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.redes {
+    width: 100%;
+    height: 100%;
+    border: solid 2px lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #5E0D26;
+}
+
+.redes h2 {
+    letter-spacing: 15px;
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.redes div {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.redes div i{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.right-section {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .left-section {
+        width: 45%;
+    }
+
+    .txt1 {
+        margin-top: 15px;
+    }
+    
+
+    .icon-user {
+        display: block;
+        font-size: 70px;
+        margin-top: 20px;
+    }
+
+    .iniciar-sesion {
+        margin-top: 20px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .form {
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .redes{
+        display: none;
+    }
+
+    .right-section {
+        display: flex;
+        width: 55%;
+        background-color: #5E0D26;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Changa', sans-serif;
+        padding: 0 20px;
+    }
+
+    .right-section p:first-child {
+        color: #ffffff;
+        font-size: 50px;
+        letter-spacing: 8px;
+        margin-bottom: 40px;
+    }
+
+    .right-section p:nth-child(2){
+        color: #ffffff;
+        text-align: center;
+        font-size: 25px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .campo-container {
+        width: 100%;
+        max-width: 540px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .right-section p:first-child{
+        font-size: 77px;
+    }
+
+    .right-section p:nth-child(2){
+        font-size: 45px;
+    }
+}

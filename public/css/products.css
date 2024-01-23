@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mohave', sans-serif;
+    /* background-color: #F5DEBF; */
+    /* background-color: #FAF7EE; */
+}
+
+/* ESTILOS A LA SECCION DE PRODUCTOS */
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main a {
+    margin: 20px 0px;
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main a div {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+main section a img {
+    width: 100%;
+}
+
+.details-article h4, .price {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.details-article .type, .uva, .origin {
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.details-article i {
+    font-size: 18px;
+    padding: 5px;
+    color: #5E0D26;
+}
+
+/* CONFIGURACION DE ESTILOS PARA TABLETS */
+@media (min-width: 768px) {
+    main .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main a {
+        margin: 20px 10px;
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* CONFIGURACION DE ESTILOS PARA DESKTOP */
+@media (min-width: 1024px) {
+    main .products {
+        justify-content: start;
+    }
+    main a {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .details-article .type, .uva, .origin {
+        display: none;
+    }
+
+    main a:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .details-article i:hover {
+        font-size: 24px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+    }
+}

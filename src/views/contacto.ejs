@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs', {title: 'Contacto' , css: 'contacto.css' })
+  %>
+
+  <body>
+    <%- include('./partials/header.ejs') %>
+
+    <main>
+      <div class="top-main">
+        <h1>CONTACTO</h1>
+        <p>
+          Escribinos tus consultas o deja un comentario, te responderemos a la
+          brevedad.
+        </p>
+      </div>
+
+      <div class="form-consulta">
+        <form action="" method="">
+          <label for="nombre">NOMBRE Y APELLIDO: </label>
+          <input type="text" name="nombre" id="nombre" required />
+
+          <label for="email">E-MAIL: </label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="select">SELECCIONE: </label>
+          <select name="select" id="select" required>
+            <option value="consulta">Consulta</option>
+            <option value="comercial">Comercial</option>
+            <option value="trabajo">Trabajá con nosotros</option>
+          </select>
+
+          <label for="comentario">DEJE SU COMENTARIO: </label>
+          <textarea
+            name="comentario"
+            id="comentario"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+
+          <button type="submit">ENVIAR</button>
+        </form>
+      </div>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

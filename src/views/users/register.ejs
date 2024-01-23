@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head.ejs', { title: "Registrate", css: "register.css" }) %>
+
+  <body>
+    <%- include('../partials/header.ejs') %>
+
+      <main id="main-register">
+        <section>
+          <form action="/users/register" method="post" id="formulario" enctype="multipart/form-data">
+            <legend>REGISTRATE</legend>
+
+            <div class="div-form">
+              <label for="name">NOMBRE</label>
+              <input type="text" name="name" id="name" placeholder="Nombre" value="<%= locals.old && old.name ? old.name : "" %>"/>
+              <span class="feedback"><%= locals.errors && errors.name ? errors.name.msg : "" %></span>
+            </div>
+
+            <div class="div-form">
+              <label for="surname">APELLIDO</label>
+              <input type="text" name="surname" id="surname" placeholder="Apellido" value="<%= locals.old && old.surname ? old.surname : "" %>"/>
+              <span class="feedback"><%= locals.errors && errors.surname ? errors.surname.msg : "" %></span>
+            </div>
+
+            <div class="div-form">
+              <label for="email">CORREO</label>
+              <input type="email" name="email" id="email" placeholder="correo@.." value="<%= locals.old && old.email ? old.email : "" %>" />
+              <span class="feedback"><%= locals.errors && errors.email ? errors.email.msg : "" %></span>
+            </div>
+
+            <div class="div-form">
+              <label for="tel">TELÉFONO</label>
+              <input type="tel" name="tel" id="tel" placeholder="+549..." value="<%= locals.old && old.tel ? old.tel : "" %>"/>
+            </div>
+
+            <div class="div-form">
+              <label for="image">IMAGEN: </label>
+              <input type="file" name="image" id="image" accept="image/png, image/jpeg">
+            </div>
+
+            <div class="div-form">
+              <label for="pass">CONTRASEÑA</label>
+              <input type="password" name="password" id="pass" />
+              <img src="" alt="" />
+              <span class="feedback"><%= locals.errors && errors.password ? errors.password.msg : "" %></span>
+            </div>
+
+            <div class="div-form">
+              <label for="reppass">CONFIRMAR CONTRASEÑA</label>
+              <input type="password" name="confirmpassword" id="reppass" />
+              <img src="" alt="" />
+              <span class="feedback"><%= locals.errors && errors.confirmpassword ? errors.confirmpassword.msg : "" %></span>
+            </div>
+
+            <button type="submit" id="button-form">CREAR CUENTA</button>
+          </form>
+        </section>
+
+        <p id="p-register">
+          ¿Ya tenes cuenta? <a href="/users/login"><strong>Inicia Sesión</strong></a>
+        </p>
+      </main>
+
+      <%- include('../partials/footer.ejs') %>
+  </body>
+
+</html>

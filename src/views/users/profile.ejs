@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs', { title: "Mi Perfil", css: "profile.css" }) %>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <main id="main-profile">
+    <div id="container">
+        <div class="title">
+            <legend>MI CUENTA</legend>
+        </div>
+        <div class="info">
+            <div class="colum1">
+                <div class="img-user">
+                    <img src="/images/users/<%=user.image%>" class="img-profile" alt="User-Profile-Image">
+                </div>
+                    <H4>Datos Personales</H4>
+                    <p id="dato"><strong>Nombre y Apellido: </strong><%= user.name+" "+user.surname%></p>
+                    <p id="dato"><strong>Email: </strong><%= user.email%></p>  
+                    <p id="dato"><strong>Teléfono: </strong><%= user.tel%></p>
+                    <a href="#" class="edit-user">Editar</a>                     
+            </div>
+            <div class="colum2">
+                <div class="shopping-history">
+                    <h4>Mis Compras</h4>
+                    <p>¡Hace tu primera compra!</p>
+                    <form action="/products">
+                        <button type="submit" class="btn">IR A LA TIENDA</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+    
+</body>
+</html>
