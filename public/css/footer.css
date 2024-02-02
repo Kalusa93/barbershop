@@ -13,7 +13,7 @@ body {
 /* ================= */
 
 footer {
-  background-color: #5E0D26;
+  background-color: #000000;
   color: #FAF7EE;
 }
 
@@ -47,7 +47,7 @@ footer {
 .social-networks a {
   font-size: 22px;
   text-decoration: none;
-  color: #F5DEBF;
+  color: #dddddd;
   padding: 5px;
   text-align: center;
 }

@@ -2,6 +2,7 @@ const controller = require('../controllers/productsController');
 const { Router } = require('express');
 const router = Router();
 const {upload} = require("../middlewares/multer");
+const authMiddleware = require('../middlewares/authMiddleware')
 
 // GET PRODUCTS
 router.get('/', controller.products);
@@ -14,16 +15,16 @@ router.get('/imported', controller.imported);
 router.get('/detail/:id', controller.detail);
 
 // ADD PRODUCTS
-router.get('/add', controller.add);
+router.get('/add', authMiddleware, controller.add);
 
 router.post('/add', upload.single('image'), controller.create);
 
 //EDIT PRODUCTS
-router.get('/edit/:id', controller.edit);
+router.get('/edit/:id', authMiddleware, controller.edit);
 
 router.put('/edit/:id', upload.single('image'), controller.update);
 
 // DELETE PRODUCT
-router.delete('/delete/:id', controller.delete);
+router.delete('/delete/:id', authMiddleware, controller.delete);
 
 module.exports = router;
