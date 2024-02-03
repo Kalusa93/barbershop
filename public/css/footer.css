@@ -22,7 +22,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   padding: 20px 0px;
+  height: 250px;
 }
 
 .container div {
@@ -36,6 +38,11 @@ footer {
 
 .container div ul li {
   padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .social-networks {
@@ -53,7 +60,11 @@ footer {
 }
 
 .copyright {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #111111;
 }
 
 /* ============= */

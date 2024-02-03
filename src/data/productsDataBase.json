@@ -82,24 +82,13 @@
  },
  {
   "id": 10,
-  "name": "Zucchini - Yellow",
-  "category": "international",
-  "price": 17771.08,
+  "name": "Zucchini - Yellow Orange",
+  "category": "national",
+  "price": "17771.08",
   "origin": "Lenger",
   "varieties": "Malbec",
-  "tall": 157,
+  "tall": "157",
   "description": "Rosado",
   "image": "zuccardi.png"
- },
- {
-  "id": 11,
-  "name": "Vino Malbec Raza Argentina",
-  "category": "national",
-  "price": "7800",
-  "origin": "nacional",
-  "varieties": "Malbec",
-  "tall": "750",
-  "description": "Malbec Riojano - El terroir y el clima permiten elaborar este malbec de un color rojo profundo con reflejos violáceos. En nariz presenta gran intensidad y complejidad aromática donde se destacan los frutos rojos, frutos secos, tabaco, vainilla y chocolate.",
-  "image": "1705708033889-D_NQ_NP_976708-MLU73203400257_12.png"
  }
 ]
