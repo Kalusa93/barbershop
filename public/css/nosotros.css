@@ -11,16 +11,6 @@ body {
 
 /* ESTILOS AL HEADER */
 
-header {
-    background-color: #5E0D26;
-}
-
-.header-content {
-    /* border: 2px red dashed; */
-    display: flex;
-    justify-content: space-around;
-}
-
 .burger {
     padding: 10px;
     margin: auto 0px;
@@ -38,11 +28,6 @@ header {
     text-align: center;
 }
 
-.icons .fa-solid {
-    width: 40px;
-    color: #FAF7EE;
-}
-
 .logo {
     width: 40%;
     max-width: 250px;
@@ -57,24 +42,14 @@ header {
     display: none;
 }
 
-.nav-bar {
-    list-style: none;
-    background-color: #F5DEBF;
-    color: #5E0D26;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding: 10px;
-    display: none;
-}
-
-.nav-bar a {
-    text-decoration: none;
-    color: #5E0D26;
-}
-
 main {
     width: 80%;
     margin: 0 auto;
+}
+
+h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .nosotros {

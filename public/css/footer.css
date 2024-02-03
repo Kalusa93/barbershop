@@ -13,7 +13,7 @@ body {
 /* ================= */
 
 footer {
-  background-color: #5E0D26;
+  background-color: #000000;
   color: #FAF7EE;
 }
 
@@ -22,7 +22,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   padding: 20px 0px;
+  height: 250px;
 }
 
 .container div {
@@ -38,6 +40,11 @@ footer {
   padding: 5px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .social-networks {
   display: flex;
   justify-content: center;
@@ -47,13 +54,17 @@ footer {
 .social-networks a {
   font-size: 22px;
   text-decoration: none;
-  color: #F5DEBF;
+  color: #dddddd;
   padding: 5px;
   text-align: center;
 }
 
 .copyright {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #111111;
 }
 
 /* ============= */

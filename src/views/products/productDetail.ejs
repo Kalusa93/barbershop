@@ -20,18 +20,13 @@
         <section class="description-product">
           <div>
             <h3>
-              <%= product.name + ' ' + product.tall%>CC.
+              <%= product.name %>
             </h3>
-            <i class="fa-regular fa-heart"></i>
           </div>
           <div class="details">
             <p>
-              <strong>Tipo de Vino:</strong>
-              <%= product.varieties %>
-            </p>
-            <p>
-              <strong>Origen:</strong>
-              <%= product.origin %>
+              <strong>Tipo de Corte:</strong>
+              <%= product.type %>
             </p>
             <p>
               <strong>Descripcion:</strong>
@@ -39,8 +34,7 @@
             </p>
           </div>
 
-          <button type="submit" id="buy-now">Comprar ahora!</button>
-          <button type="" id="add-cart">Agregar al carro!</button>
+          <a href="https://wa.me/3854026471"><button type="submit" id="buy-now">Pedir turno</button></a>
           <a href="/products/edit/<%= product.id %>">Editar</a>
           <form action="/products/delete/<%= product.id %>?_method=delete" method="post">
             <button type="submit">Eliminar</button>

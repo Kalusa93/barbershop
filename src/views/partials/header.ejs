@@ -5,12 +5,12 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/4b3437fcea.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/header.css">
-    <title>VENNER Vinoteca</title>
+    <title>Barbería Aukany</title>
 </head>
 <header>
     <div class="header-content">
         <div class="logo">
-            <a href="/"><img src="/images/venner-logo3.png" alt="Logo de Venner"></a>
+            <a href="/"><img src="/images/aukany-logo.png"></a>
         </div>
 
         <form action="/search" method="GET" class="search-bar">
@@ -20,9 +20,6 @@
 
 
         <div class="icons">
-            <div class="cart">
-                <a href="/cart"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
             <% if (locals.isLogged) { %>
                 <div class="welcome">¡Bienvenido <%= locals.userLogged.name %>!</div>
                 <div class="dropdown-menu">
@@ -57,9 +54,9 @@
                 <li class="ocultar"><a href="/">HOME</a></li>
             <% } %>
 
-            <li><a href="/products">PRODUCTOS</a></li>
-            <li><a href="/products/national">VINOS ARGENTINOS</a></li>
-            <li><a href="/products/imported">VINOS IMPORTADOS</a></li>
+            <li><a href="/">INICIO</a></li>
+            <li><a href="/products">CORTES</a></li>
+            <li><a href="/products/add">AGREGAR CORTES</a></li>
             <li><a href="/us">NOSOTROS</a></li>
             <li><a href="/contact">CONTACTO</a></li>
 

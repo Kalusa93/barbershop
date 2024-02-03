@@ -1,69 +1,51 @@
 [
  {
   "id": 1,
-  "name": "Crackers Cheez It",
-  "category": "international",
-  "price": 1416.52,
-  "origin": "Tilik",
-  "varieties": "Pinot Noir",
-  "tall": 8,
-  "description": "Tinto",
-  "image": "arcangel.png"
+  "name": "Pulga Rodriguez",
+  "type": "tradicional",
+  "barber": "Chiky",
+  "description": "tradicional a maquina",
+  "image": "pulga1.png"
  },
  {
   "id": 2,
-  "name": "Lid - 16 Oz And 32 Oz",
-  "category": "national",
-  "price": 2089.56,
-  "origin": "Cifuentes",
-  "varieties": "Malbec",
-  "tall": 234,
-  "description": "Blanco",
-  "image": "catena.png"
+  "name": "Luis Ingolotti",
+  "type": "low fade",
+  "barber": "Pichi",
+  "description": "low fade con 0 a 1",
+  "image": "ingolotti1.png"
  },
  {
   "id": 3,
-  "name": "Couscous",
-  "category": "national",
-  "price": 11526.19,
-  "origin": "Nässjö",
-  "varieties": "Merlot",
-  "tall": 594,
-  "description": "Tinto",
-  "image": "colome.png"
+  "name": "Pelo blanco",
+  "type": "Pelo blanco",
+  "barber": "Chiky",
+  "description": "Pelo blanco con violeta",
+  "image": "peloblanco1.png"
  },
  {
   "id": 4,
-  "name": "Filling - Mince Meat",
-  "category": "national",
-  "price": 2830.09,
-  "origin": "Liqiao",
-  "varieties": "Malbec",
-  "tall": 731,
-  "description": "Rosado",
-  "image": "don.png"
+  "name": "Seba Valdez",
+  "type": "low fade",
+  "barber": "Chiky",
+  "description": "low fade con 0 a 1",
+  "image": "sebavaldez1.png"
  },
  {
   "id": 5,
-  "name": "Stock - Fish",
-  "category": "international",
-  "price": 16999.6,
-  "origin": "Talondang",
-  "varieties": "Merlot",
-  "tall": 600,
-  "description": "Tinto",
-  "image": "estancia.webp"
+  "name": "Christian Ocampos",
+  "type": "low fade",
+  "barber": "Pichi",
+  "description": "low fade con 0 a 2",
+  "image": "ocampos1.png"
  },
  {
   "id": 6,
-  "name": "Wine - Manischewitz Concord",
-  "category": "national",
-  "price": "5859.76",
-  "origin": "Qinxi",
-  "varieties": "Cabernet Sauvignon",
-  "tall": "750",
-  "description": "Tinto",
-  "image": "linterna.png"
+  "name": "Seba Valdez",
+  "type": "low fade",
+  "barber": "Chiky",
+  "description": "low fade con 0 a 1",
+  "image": "sebavaldez1.png"
  },
  {
   "id": 7,
@@ -100,24 +82,13 @@
  },
  {
   "id": 10,
-  "name": "Zucchini - Yellow",
-  "category": "international",
-  "price": 17771.08,
+  "name": "Zucchini - Yellow Orange",
+  "category": "national",
+  "price": "17771.08",
   "origin": "Lenger",
   "varieties": "Malbec",
-  "tall": 157,
+  "tall": "157",
   "description": "Rosado",
   "image": "zuccardi.png"
- },
- {
-  "id": 11,
-  "name": "Vino Malbec Raza Argentina",
-  "category": "national",
-  "price": "7800",
-  "origin": "nacional",
-  "varieties": "Malbec",
-  "tall": "750",
-  "description": "Malbec Riojano - El terroir y el clima permiten elaborar este malbec de un color rojo profundo con reflejos violáceos. En nariz presenta gran intensidad y complejidad aromática donde se destacan los frutos rojos, frutos secos, tabaco, vainilla y chocolate.",
-  "image": "1705708033889-D_NQ_NP_976708-MLU73203400257_12.png"
  }
 ]
