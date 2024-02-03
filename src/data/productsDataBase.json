@@ -46,49 +46,5 @@
   "barber": "Chiky",
   "description": "low fade con 0 a 1",
   "image": "sebavaldez1.png"
- },
- {
-  "id": 7,
-  "name": "Dried Figs",
-  "category": "international",
-  "price": 3387.31,
-  "origin": "Germiston",
-  "varieties": "Malbec",
-  "tall": 736,
-  "description": "Tinto",
-  "image": "paraiso.png"
- },
- {
-  "id": 8,
-  "name": "Bandage - Flexible Neon",
-  "category": "international",
-  "price": 6551.59,
-  "origin": "Jõgeva",
-  "varieties": "Cabernet Sauvignon",
-  "tall": 852,
-  "description": "Tinto",
-  "image": "yacochuya.png"
- },
- {
-  "id": 9,
-  "name": "Napkin - Cocktail,beige 2 - Ply",
-  "category": "international",
-  "price": 19593.01,
-  "origin": "Lianghe",
-  "varieties": "Cabernet Sauvignon",
-  "tall": 960,
-  "description": "Tinto",
-  "image": "zuccardi.png"
- },
- {
-  "id": 10,
-  "name": "Zucchini - Yellow Orange",
-  "category": "national",
-  "price": "17771.08",
-  "origin": "Lenger",
-  "varieties": "Malbec",
-  "tall": "157",
-  "description": "Rosado",
-  "image": "zuccardi.png"
  }
 ]

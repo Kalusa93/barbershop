@@ -9,7 +9,7 @@
 
 legend{
     text-align: center;
-    color: #5E0D26;
+    color: #000000;
     font-weight: bold;
     font-size: 1.5em;
     letter-spacing: 0.5em;
@@ -31,28 +31,28 @@ legend{
     display: flex;
     flex-direction: column;
     padding: 1em;
-    border: 1px solid #5E0D26;
+    border: 1px solid #000000;
     margin-bottom: 2em;
 }
 .div-form label{
     display: flex;
     flex-wrap: wrap;
-    color:#5E0D26;
+    color:#000000;
     font-weight: 600;
 }
 .div-form input{
     display: flex;
     flex-wrap: wrap;
-    border:1px solid #5E0D26;
+    border:1px solid #000000;
     padding: 0.7em;
     
 }
 
 #button-form{
-    background-color: #5E0D26;
+    background-color: #000000;
     padding: 0.5em;
     color: #ebebeb;
-    border: #5E0D26;
+    border: #000000;
     border-radius: 7px;
     font-size: large;
     font-weight: 500;
@@ -61,14 +61,14 @@ legend{
     
 }
 #p-register{
-    color:#5E0D26;
+    color:#000000;
     font-size: 1.5em;
     text-align: center;
     margin-top: 2em;
 }
 #p-register a{
     text-decoration: none;
-    color: #5E0D26;
+    color: #000000;
 }
 
 .feedback {

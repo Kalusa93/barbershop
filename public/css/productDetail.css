@@ -3,6 +3,11 @@
     padding: 0;
     font-family: 'Mohave', sans-serif;
 }
+
+.titulo-corte {
+    text-align: center;
+}
+
 @media (min-width:0) {
 main{
     display: flex;
@@ -32,7 +37,7 @@ section img{
 .description-product h3{
     margin: 3%;
 }
-#buy-now {
+#buy-now, #edit, #delete {
     border: none;
     border-radius: 20px;
     color: #FFFFFF;
@@ -43,20 +48,19 @@ section img{
     cursor: pointer;
     display: block;
     margin: 15px;
+    width: 100%;
 }
 
-#add-cart {
-    border: none;
-    border-radius: 20px;
-    color: #5E0D26;
-    letter-spacing: 2px;
-    background-color: D9D9D9;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    display: block;
-    margin: 15px;
+#edit {
+    background-color: #aaaaaa;
+    color: #000000;
 }
+
+#delete {
+    background-color: #aaaaaa;
+    color: red;
+}
+
 .details {
     display: flex;
     flex-direction: column;

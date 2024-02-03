@@ -8,24 +8,15 @@
 
     <main>
       <div class="edit-product">
-        <h1>EDITAR INFORMACION</h1>
+        <h1>EDITAR PRODUCTO</h1>
         <form
           action="/products/edit/<%= productToEdit.id %>?_method=put"
           method="POST"
-          enctype="multipart/form-data"
-        >
-          <div class="edit-product-field">
-            <label for="category">CATEGORIA: </label>
-            <select name="category" id="">
-              <option value="national">Vino Argentino</option>
-              <option value="imported">Vino Importado</option>
-            </select>
-          </div>
+          enctype="multipart/form-data">
 
           <div class="edit-product-field">
-            <label for="name">NOMBRE: </label>
-            <input
-              type="text"
+            <label for="name">NOMBRE </label>
+            <input type="text"
               name="name"
               id="name"
               required
@@ -34,24 +25,24 @@
           </div>
 
           <div class="edit-product-field">
-            <label for="varieties">VARIEDAD: </label>
+            <label for="barber">PELUQUERO </label>
             <input
               type="text"
-              name="varieties"
-              id="varieties"
-              placeholder="Variedades de uva, cepas..."
-              value="<%= productToEdit.varieties %>"
+              name="barber"
+              id="barber"
+              required
+              value="<%= productToEdit.barber %>"
             />
           </div>
 
           <div class="edit-product-field">
-            <label for="origin">ORIGEN: </label>
+            <label for="type">TIPO </label>
             <input
               type="text"
-              name="origin"
-              id="origin"
-              placeholder="Region, provincia, pais..."
-              value="<%= productToEdit.origin %>"
+              name="type"
+              id="type"
+              required
+              value="<%= productToEdit.type %>"
             />
           </div>
 
@@ -67,18 +58,6 @@
           </div>
 
           <div class="edit-product-field">
-            <label for="price">PRECIO (ARS): </label>
-            <input
-              type="number"
-              name="price"
-              id="price"
-              placeholder="$"
-              required
-              value="<%=productToEdit.price%>"
-            />
-          </div>
-
-          <div class="edit-product-field">
             <label for="image">IMAGEN: </label>
             <input
               type="file"
@@ -86,16 +65,6 @@
               id="image"
               accept="image/png, image/jpeg"
               multiple
-            />
-          </div>
-
-          <div class="edit-product-field">
-            <label for="tall">TAMAÑO (cm<sup>3</sup>, mL): </label>
-            <input
-              type="number"
-              name="tall"
-              id="tall"
-              value="<%=productToEdit.tall%>"
             />
           </div>
 

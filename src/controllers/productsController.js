@@ -40,11 +40,8 @@ const productsController = {
         const newProduct = {
             id: products[products.length - 1].id + 1,
             name: req.body.name,
-            category: req.body.category,
-            price: req.body.price,
-            origin: req.body.origin,
-            varieties: req.body.varieties,
-            tall: req.body.tall,
+            type: req.body.type,
+            barber: req.body.barber,
             description: req.body.description,
             image,
         };
@@ -68,11 +65,8 @@ const productsController = {
         let indice = products.findIndex(p => p.id == req.params.id);
         
         products[indice].name = req.body.name
-        products[indice].category = req.body.category
-        products[indice].price = req.body.price
-        products[indice].origin = req.body.origin
-        products[indice].varieties = req.body.varieties
-        products[indice].tall = req.body.tall
+        products[indice].type = req.body.type
+        products[indice].barber = req.body.barber
         products[indice].description = req.body.description
 
         if(req.file)  products[indice].image = req.file.filename;

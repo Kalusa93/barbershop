@@ -18,7 +18,7 @@
             </div>
         </section>
         <section class="description-product">
-          <div>
+          <div class="titulo-corte">
             <h3>
               <%= product.name %>
             </h3>
@@ -29,22 +29,39 @@
               <%= product.type %>
             </p>
             <p>
-              <strong>Descripcion:</strong>
+              <strong>Descripción:</strong>
               <%= product.description %>
+            </p>
+            <p>
+              <strong>Peluquero:</strong>
+              <%= product.barber %>
             </p>
           </div>
 
-          <a href="https://wa.me/3854026471"><button type="submit" id="buy-now">Pedir turno</button></a>
-          <a href="/products/edit/<%= product.id %>">Editar</a>
-          <form action="/products/delete/<%= product.id %>?_method=delete" method="post">
-            <button type="submit">Eliminar</button>
+          <a href="https://wa.me/3854026471" class="a-submit"><button type="submit" id="buy-now">Pedir turno</button></a>
+
+          <% if (locals.isLogged) { %>
+          <a href="/products/edit/<%= product.id %>"><button type="submit" id="edit">Editar</button></a>
+          <form action="/products/delete/<%= product.id %>?_method=delete" method="post" id="deleteForm">
+            <button type="submit" id="delete">Eliminar</button>
           </form>
+          <% } %>
         </section>
 
       </main>
 
       <%- include('../partials/footer.ejs') %>
 
+      <script>
+        document.getElementById("deleteForm").addEventListener("click", function(event) {
+          event.preventDefault();
+    
+            // Mostrar un mensaje de confirmación
+            if (confirm("¿Estás seguro de que quieres eliminar este producto?")) {
+                document.getElementById("deleteForm").submit(); // Enviar el formulario si el usuario confirma
+            }
+        });
+    </script>
   </body>
 
 </html>

@@ -7,9 +7,20 @@
 
     <main>
 
+      <% if (locals.isLogged) { %>
+        <div class="button-container">
+          <a href="/products/add"><button>AGREGAR CORTES</button></a>
+        </div>
+        <% } %>
+      <div class="prod-func-container">
+          <form action="/search" method="GET" class="search-bar">
+            <input type="search" name="keywords" id="keywords" placeholder="Buscar producto">
+            <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+      </div>
+
       <section>
         <div class="products">
-
           <% products.forEach((product) => { %>
 
           <a href="/products/detail/<%=product.id %>" class="main-article">
@@ -33,9 +44,7 @@
           </a>
 
           <% }) %>
-
         </div>
-
       </section>
 
     </main>
