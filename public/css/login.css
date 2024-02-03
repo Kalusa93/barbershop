@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Mohave', sans-serif;
 }
 
 body {
@@ -9,9 +10,8 @@ body {
     width: 100vw;
     height: 100vh;
     /* background-color: #FAF7EE; */
-    background-color: #F5DEBF;
-    color: #5E0D26;
-    font-family: 'Mohave', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .left-section {
@@ -19,17 +19,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .txt1 {
-    font-family: 'Mouse Memoirs', sans-serif;
+    font-family: 'Mohave', sans-serif;
     font-size: 92px;
     letter-spacing: 2px;
     margin-top: 30px;
 }
 
 .txt1 a {
-    color: #5E0D26;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -69,7 +70,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 2px #5E0D26;
+    border: solid 2px #000000;
     border-radius: 10px;
     background-color: #FAF7EE;
 }
@@ -98,7 +99,7 @@ body {
     font-size: 20px;
     text-decoration: none;
     text-align: right;
-    color: #5E0D26;;
+    color: #000000;;
     font-weight: bold;
 }
 
@@ -128,7 +129,7 @@ body {
     font-size: 20px;
     padding: 12px 8px;
     color: #ffffff;
-    background-color: #5E0D26;
+    background-color: #000000;
     border-radius: 8px;
     width: 250px;
     align-self: center;
@@ -139,7 +140,7 @@ body {
 
 :hover.btn {
     background-color: white;
-    color: #5E0D26;
+    color: #000000;
     cursor: pointer;
 }
 
@@ -152,7 +153,7 @@ body {
 
 .tienes-cuenta a{
     text-decoration: none;
-    color: #5E0D26;
+    color: #000000;
     font-weight: bold;
     margin-left: 4px;
 }
@@ -165,7 +166,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #5E0D26;
+    background-color: #000000;
 }
 
 .redes h2 {
@@ -233,7 +234,7 @@ body {
     .right-section {
         display: flex;
         width: 55%;
-        background-color: #5E0D26;
+        background-color: #000000;
         flex-direction: column;
         align-items: center;
         justify-content: center;
