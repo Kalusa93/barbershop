@@ -2,9 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
     font-family: Mohave, sans-serif;
 }
 
@@ -26,11 +23,10 @@ header {
 
 .icons {
     display: flex;
+    margin-right: 90px;
 }
 
-.cart,
-.user,
-.burger {
+.cart, .user, .burger {
     margin: auto 0px;
     font-size: 20px;
     text-align: center;
@@ -44,6 +40,7 @@ header {
 .logo {
     width: 40%;
     max-width: 250px;
+    margin-left: 50px;
 }
 
 .logo img {
@@ -55,7 +52,7 @@ header {
     display: none;
 }
 
-.welcome {
+.welcome, .iniciar-sesion {
     position: relative;
     display: inline-block;
     margin: auto;

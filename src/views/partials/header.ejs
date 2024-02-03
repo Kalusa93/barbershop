@@ -13,12 +13,6 @@
             <a href="/"><img src="/images/aukany-logo.png"></a>
         </div>
 
-        <form action="/search" method="GET" class="search-bar">
-            <input type="search" name="keywords" id="keywords" placeholder="Buscar producto">
-            <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-
-
         <div class="icons">
             <% if (locals.isLogged) { %>
                 <div class="welcome">¡Bienvenido <%= locals.userLogged.name %>!</div>
@@ -33,7 +27,10 @@
                 </div>
             <% } else { %>
                 <div class="user">
-                    <a href="/users/login"><i class="fa-solid fa-circle-user"></i></a>
+                    <a href="/users/login">
+                        <div class="iniciar-sesion">Iniciar sesión</div>
+                        <i class="fa-solid fa-circle-user"></i>
+                    </a>
                 </div>
             <% } %>
 
@@ -51,17 +48,14 @@
 
             <% if (locals.isLogged) { %>
                 <li><a href="/users/profile"><img src="/images/users/<%= locals.userLogged.image %>" alt=""></a></li>
-                <li class="ocultar"><a href="/">HOME</a></li>
             <% } %>
-
+            
             <li><a href="/">INICIO</a></li>
             <li><a href="/products">CORTES</a></li>
-            <li><a href="/products/add">AGREGAR CORTES</a></li>
             <li><a href="/us">NOSOTROS</a></li>
             <li><a href="/contact">CONTACTO</a></li>
 
             <% if (locals.isLogged) { %>
-                <li class="ocultar"><a href="/cart">CARRITO</a></li>
                 <li class="ocultar"><a href="/users/logout">CERRAR SESIÓN</a></li>
             <% } %>
         </ul>

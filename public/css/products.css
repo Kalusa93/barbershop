@@ -44,10 +44,36 @@ main section a img {
     padding: 0px 10px;
 }
 
-.details-article i {
-    font-size: 18px;
-    padding: 5px;
-    color: #5E0D26;
+.prod-func-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button-container a button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
 }
 
 /* CONFIGURACION DE ESTILOS PARA TABLETS */
