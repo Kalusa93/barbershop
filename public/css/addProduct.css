@@ -24,26 +24,26 @@ main {
     text-align: center;
     font-size: 22px;
     margin-bottom: 10px 0px;
-    color: #5E0D26;
+    color: #000000;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
 .add-product-field {
     padding: 1em;
-    border: 1px solid #5E0D26;
+    border: 1px solid #000000;
     margin-bottom: 2em;
 }
 
 .add-product form label {
     display: block;
-    color:#5E0D26;
+    color:#000000;
     font-weight: 600;
     padding-bottom: 5px;
 }
 
 .add-product form input {
-    border:1px solid #5E0D26;
+    border:1px solid #000000;
     padding: 10px;
     width: 100%;
 }
@@ -52,7 +52,7 @@ main {
     display: block;
     margin: 20px auto;
     color: #ebebeb;
-    background-color: #5E0D26;
+    background-color: #000000;
     border: none;
     padding: 15px;
     width: 50%;
@@ -66,9 +66,9 @@ main {
 .buttons .reset{
     display: block;
     margin: 20px auto;
-    color: #5E0D26;
+    color: #000000;
     background-color: #ebebeb;
-    border: 1.5px solid #5E0D26;
+    border: 1.5px solid #000000;
     padding: 15px;
     width: 50%;
     max-width: 230px;
