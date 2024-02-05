@@ -4,12 +4,11 @@
 <body>
     <%- include('../partials/header.ejs') %>
     <main id="main-profile">
-    <div id="container">
         <div class="title">
             <legend>MI CUENTA</legend>
         </div>
-        <div class="info">
-            <div class="colum1">
+    <div id="container">
+            <div class="profile-data">
                 <div class="img-user">
                     <img src="/images/users/<%=user.image%>" class="img-profile" alt="User-Profile-Image">
                 </div>
@@ -19,15 +18,12 @@
                     <p id="dato"><strong>Teléfono: </strong><%= user.tel%></p>
                     <a href="#" class="edit-user">Editar</a>                     
             </div>
-            <div class="colum2">
-                <div class="shopping-history">
+            <div class="column2">
                     <form action="/products">
-                        <button type="submit" class="btn">Ver cortes</button>
+                        <button type="submit" class="btn-cortes">Ver cortes</button>
                     </form>
-                </div>
             </div>
             
-        </div>
     </div>
     </main>
     <%- include('../partials/footer.ejs') %>
