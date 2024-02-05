@@ -5,6 +5,7 @@
   "type": "tradicional",
   "barber": "Chiky",
   "description": "tradicional a maquina",
+  "date": "25/01/24",
   "image": "pulga1.png"
  },
  {
@@ -13,6 +14,7 @@
   "type": "low fade",
   "barber": "Pichi",
   "description": "low fade con 0 a 1",
+  "date": "20/01/24",
   "image": "ingolotti1.png"
  },
  {
@@ -21,6 +23,7 @@
   "type": "Pelo blanco",
   "barber": "Chiky",
   "description": "Pelo blanco con violeta",
+  "date": "18/01/24",
   "image": "peloblanco1.png"
  },
  {
@@ -29,6 +32,7 @@
   "type": "low fade",
   "barber": "Chiky",
   "description": "low fade con 0 a 1",
+  "date": "15/01/24",
   "image": "sebavaldez1.png"
  },
  {
@@ -37,14 +41,33 @@
   "type": "low fade",
   "barber": "Pichi",
   "description": "low fade con 0 a 2",
+  "date": "15/01/24",
   "image": "ocampos1.png"
  },
  {
   "id": 6,
-  "name": "Seba Valdez",
+  "name": "Braian Leizza",
   "type": "low fade",
   "barber": "Chiky",
   "description": "low fade con 0 a 1",
-  "image": "sebavaldez1.png"
+  "date": "12/01/24",
+  "image": "braianleizza.png"
+ },
+ {
+  "id": 7,
+  "name": "Lucas Alfonso Leguizamón",
+  "type": "low fade",
+  "barber": "Pichy",
+  "description": "low fade de 0 a 1",
+  "image": "1707138134189-WhatsApp Image 2024-02-03 at 12.03.24.jpeg"
+ },
+ {
+  "id": 9,
+  "name": "Gonzalo Alves",
+  "type": "low fade",
+  "barber": "Chiky",
+  "description": "low fade de 0 a 1",
+  "date": "29/01/2024",
+  "image": "1707144328270-gonzaloalves1.png"
  }
 ]

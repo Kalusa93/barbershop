@@ -43,6 +43,7 @@ const productsController = {
             type: req.body.type,
             barber: req.body.barber,
             description: req.body.description,
+            date: req.body.date,
             image,
         };
 
@@ -68,6 +69,7 @@ const productsController = {
         products[indice].type = req.body.type
         products[indice].barber = req.body.barber
         products[indice].description = req.body.description
+        products[indice].date = req.body.date
 
         if(req.file)  products[indice].image = req.file.filename;
 

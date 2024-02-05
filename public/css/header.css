@@ -48,10 +48,6 @@ header {
     max-width: 250px;
 }
 
-.search-bar {
-    display: none;
-}
-
 .welcome, .iniciar-sesion {
     position: relative;
     display: inline-block;
@@ -114,14 +110,13 @@ header {
 
 .nav-bar {
     list-style: none;
-    background-color: #FAF7EE;
+    background-color: #ffffff;
     color: #000000;
-    opacity: 95%;
     font-weight: bold;
     letter-spacing: 2px;
     position: fixed;
     height: 100vh;
-    width: 80%;
+    width: 100%;
     top: 0;
     right: -100%;
     z-index: 100;
@@ -169,27 +164,7 @@ header {
         text-align: center;
     }
 
-    .search-bar input {
-        font-size: 16px;
-        height: 40px;
-        border: none;
-        border-radius: 10px;
-        background-color: #dddddd;
-        width: 80%;
-        max-width: 300px;
-        outline: none;
-        padding-left: 12px;
-    }
-
-    .search-bar button {
-        font-size: 16px;
-        width: 40px;
-        height: 40px;
-        border: none;
-        border-radius: 10px;
-        background-color: #dddddd;
-        float: right;
-    }
+    
 
     /* ====================== */
     /* ESTILOS AL BURGER MENU */
@@ -224,14 +199,6 @@ header {
         display: none
     }
 
-    .search-bar {
-        display: block;
-        margin: auto 0px;
-        background-color: #dddddd;
-        border-radius: 10px;
-        width: 30%;
-    }
-
     .nav-bar img {
         display: none;
     }
@@ -246,7 +213,13 @@ header {
         margin: auto;
         padding-left: 10px;
         padding-right: 10px;
-        color: #FAF7EE;
+        color: #ffffff;
         /* border: 1px red dashed; */
+    }
+}
+
+@media (max-width: 507px) {
+    .icons, .logo {
+        margin: 0;
     }
 }
