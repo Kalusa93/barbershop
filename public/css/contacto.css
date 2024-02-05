@@ -11,10 +11,6 @@ body {
 
 /* ESTILOS AL HEADER */
 
-header {
-    background-color: #5E0D26;
-}
-
 .header-content {
     /* border: 2px red dashed; */
     display: flex;
@@ -28,14 +24,6 @@ header {
     text-align: center;
     width: 40px;
     color: #FAF7EE;
-}
-
-.icons {
-    /* border: 1px red dashed; */
-    padding: 10px;
-    margin: auto 0px;
-    font-size: 22px;
-    text-align: center;
 }
 
 .icons .fa-solid {
