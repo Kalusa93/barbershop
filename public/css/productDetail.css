@@ -7,7 +7,12 @@
 .titulo-corte {
     text-align: center;
 }
-
+.carousel-inner img {
+    margin: 0 auto;
+}
+.carousel-inner {
+    background-color: #000000;
+}
 @media (min-width:0) {
 main{
     display: flex;
