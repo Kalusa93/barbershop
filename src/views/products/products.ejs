@@ -12,7 +12,7 @@
           <a href="/products/add"><button>AGREGAR CORTES</button></a>
         </div>
         <% } %>
-      <div class="prod-func-container">
+      <div class="prod-search-container">
           <form action="/search" method="GET" class="search-bar">
             <input type="search" name="keywords" id="keywords" placeholder="Buscar producto">
             <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -31,13 +31,10 @@
             <div class="details-article">
               <h4><%= product.name %></h4>
               <p class="type">
-                <strong>Tipo de vino:</strong> <%= product.varities %>
+                <strong>Tipo: </strong> <%= product.type %>
               </p>
-              <p class="uva">
-                <strong>Uva:</strong> <%= product.description %>
-              </p>
-              <p class="origin">
-                <strong>Origen:</strong> <%= product.origin %>
+              <p class="peluquero">
+                <strong>Peluquero: </strong> <%= product.barber %>
               </p>
             </div>
             

@@ -71,6 +71,8 @@ a {
 /* MEDIA QUERIES */
 /* ============= */
 
-@media (min-width: 768px) {
-  
+@media (max-width: 768px) {
+  .container {
+    height: fit-content;
+  }
 }
