@@ -58,11 +58,12 @@ header {
     /* border: 1px red dashed; */
 }
 
-.dropdown-menu {
+.dropdown-menu-local {
     display: none;
+    background-color: #000000;
 }
 
-.dropdown-menu figure img {
+.dropdown-menu-local figure img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -86,7 +87,7 @@ header {
     padding: 10px;
 }
 
-.dropdown-menu:hover .dropdown-content {
+.dropdown-menu-local:hover .dropdown-content {
     display: block;
 }
 
@@ -207,7 +208,7 @@ header {
         display: none;
     }
 
-    .dropdown-menu {
+    .dropdown-menu-local {
         position: relative;
         display: inline-block;
         margin: auto;

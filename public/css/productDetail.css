@@ -13,6 +13,7 @@
 .carousel-inner {
     background-color: #000000;
 }
+
 @media (min-width:0) {
 main{
     display: flex;

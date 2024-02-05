@@ -34,6 +34,7 @@ footer {
 
 .container div ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .container div ul li {
