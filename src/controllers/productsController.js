@@ -35,7 +35,16 @@ const productsController = {
     },
     
     create: (req, res) => {
-        const image = req.file ? req.file.filename : "default-image.png";
+        let images = [];
+        
+        // Verificar si se enviaron archivos
+        if (req.files && req.files.length > 0) {
+            req.files.forEach(file => {
+                images.push(file.filename);
+            });
+        } else {
+            images.push("default-image.png");
+        }
         
         const newProduct = {
             id: products[products.length - 1].id + 1,
@@ -44,7 +53,7 @@ const productsController = {
             barber: req.body.barber,
             description: req.body.description,
             date: req.body.date,
-            image,
+            images,
         };
 
         products.push(newProduct);
@@ -71,7 +80,13 @@ const productsController = {
         products[indice].description = req.body.description
         products[indice].date = req.body.date
 
-        if(req.file)  products[indice].image = req.file.filename;
+        if (req.files && req.files.length > 0) {
+            let newImages = [];
+            req.files.forEach(file => {
+                newImages.push(file.filename);
+            });
+            products[indice].images = newImages; // Reemplazar las imágenes antiguas con las nuevas
+        }
 
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
 

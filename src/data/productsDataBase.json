@@ -69,5 +69,17 @@
   "description": "low fade de 0 a 1",
   "date": "29/01/2024",
   "image": "1707144328270-gonzaloalves1.png"
+ },
+ {
+  "id": 10,
+  "name": "Lucas Alfonso Leguizamón",
+  "type": "low fade",
+  "barber": "Pichy",
+  "description": "low fade de 0 a 1",
+  "date": "29/01/2024",
+  "images": [
+   "1707171349346-WhatsApp Image 2024-02-03 at 12.03.24.jpeg",
+   "1707171349349-2016-Chevy-Cruze-Body-Structure-UHSS-Steel-Extrication.png"
+  ]
  }
 ]

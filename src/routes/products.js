@@ -17,12 +17,12 @@ router.get('/detail/:id', controller.detail);
 // ADD PRODUCTS
 router.get('/add', authMiddleware, controller.add);
 
-router.post('/add', upload.single('image'), controller.create);
+router.post('/add', upload.array('images', 5), controller.create);
 
 //EDIT PRODUCTS
 router.get('/edit/:id', authMiddleware, controller.edit);
 
-router.put('/edit/:id', upload.single('image'), controller.update);
+router.put('/edit/:id', upload.array('images', 5), controller.update);
 
 // DELETE PRODUCT
 router.delete('/delete/:id', authMiddleware, controller.delete);
