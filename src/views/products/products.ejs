@@ -22,10 +22,11 @@
       <section>
         <div class="products">
           <% products.forEach((product) => { %>
+            <% let firstImage = product.images.length > 0 ? product.images[0] : 'default-image.png'; %>
 
           <a href="/products/detail/<%=product.id %>" class="main-article">
             <div class="image-article">
-              <img src="/images/products/<%= product.image %>" alt="" />
+              <img src="/images/products/<%= firstImage %>" alt="" />
             </div>
 
             <div class="details-article">
