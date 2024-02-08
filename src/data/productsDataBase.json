@@ -1,73 +1,84 @@
 [
  {
-  "id": 1,
+  "id": 11,
   "name": "Pulga Rodriguez",
   "type": "tradicional",
-  "barber": "Chiky",
-  "description": "tradicional a maquina",
-  "date": "25/01/24",
-  "image": "pulga1.png"
+  "barber": "chiky",
+  "description": "tradicional",
+  "date": "29/01/2024",
+  "images": [
+   "1707177128625-pulga1.png",
+   "1707177128628-pulga2.png"
+  ]
  },
  {
-  "id": 2,
+  "id": 12,
   "name": "Luis Ingolotti",
   "type": "low fade",
-  "barber": "Pichi",
-  "description": "low fade con 0 a 1",
-  "date": "20/01/24",
-  "image": "ingolotti1.png"
- },
- {
-  "id": 3,
-  "name": "Pelo blanco",
-  "type": "Pelo blanco",
   "barber": "Chiky",
-  "description": "Pelo blanco con violeta",
-  "date": "18/01/24",
-  "image": "peloblanco1.png"
+  "description": "low fade de 0 a 2",
+  "date": "27/01/2024",
+  "images": [
+   "1707181355070-ingolotti1.png",
+   "1707181355074-ingolotti2.png"
+  ]
  },
  {
-  "id": 4,
+  "id": 13,
+  "name": "Brandon Robinson",
+  "type": "corto",
+  "barber": "Chiky",
+  "description": "corto con maquina",
+  "date": "7/2/2024",
+  "images": [
+   "1707407306952-brandon1.png",
+   "1707407306953-brandon2.png"
+  ]
+ },
+ {
+  "id": 14,
+  "name": "Cristian Ocampos",
+  "type": "low fade ",
+  "barber": "Chiky",
+  "description": "low fade de 0 a 1 con marca",
+  "date": "27/01/2024",
+  "images": [
+   "1707408609851-ocampos1.png"
+  ]
+ },
+ {
+  "id": 15,
   "name": "Seba Valdez",
   "type": "low fade",
-  "barber": "Chiky",
-  "description": "low fade con 0 a 1",
-  "date": "15/01/24",
-  "image": "sebavaldez1.png"
+  "barber": "Pichy",
+  "description": "low fade de 0 a 2",
+  "date": "25/01/2024",
+  "images": [
+   "1707408764765-sebavaldez1.png",
+   "1707408764771-sebavaldez2.png"
+  ]
  },
  {
-  "id": 5,
-  "name": "Christian Ocampos",
-  "type": "low fade",
-  "barber": "Pichi",
-  "description": "low fade con 0 a 2",
-  "date": "15/01/24",
-  "image": "ocampos1.png"
- },
- {
-  "id": 6,
+  "id": 16,
   "name": "Braian Leizza",
   "type": "low fade",
-  "barber": "Chiky",
-  "description": "low fade con 0 a 1",
-  "date": "12/01/24",
-  "image": "braianleizza.png"
- },
- {
-  "id": 7,
-  "name": "Lucas Alfonso Leguizamón",
-  "type": "low fade",
   "barber": "Pichy",
-  "description": "low fade de 0 a 1",
-  "image": "1707138134189-WhatsApp Image 2024-02-03 at 12.03.24.jpeg"
+  "description": "low fade de 0 a 2",
+  "date": "18/01/2024",
+  "images": [
+   "1707408923281-braianleizza.png"
+  ]
  },
  {
-  "id": 9,
+  "id": 17,
   "name": "Gonzalo Alves",
   "type": "low fade",
   "barber": "Chiky",
-  "description": "low fade de 0 a 1",
-  "date": "29/01/2024",
-  "image": "1707144328270-gonzaloalves1.png"
+  "description": "low fade de 0 a 2",
+  "date": "27/01/2024",
+  "images": [
+   "1707409049576-gonzaloalves1.png",
+   "1707409049585-gonzaloalves2.png"
+  ]
  }
 ]
