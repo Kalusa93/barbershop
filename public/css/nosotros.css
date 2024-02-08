@@ -11,29 +11,6 @@ body {
 
 /* ESTILOS AL HEADER */
 
-.burger {
-    padding: 10px;
-    margin: auto 0px;
-    font-size: 22px;
-    text-align: center;
-    width: 40px;
-    color: #FAF7EE;
-}
-
-.logo {
-    width: 40%;
-    max-width: 250px;
-}
-
-.logo img {
-    width: 100%;
-    max-width: 250px;
-}
-
-.search-bar {
-    display: none;
-}
-
 main {
     width: 80%;
     margin: 0 auto;
@@ -60,22 +37,18 @@ h2 {
     margin-bottom: 20px;
 }
 
-.iframe-map {
-    text-align: center;
-    margin: 20px 0px;
+.img-container {
+    display: flex;
+    justify-content: center;
 }
 
-.iframe-map iframe {
-    width: 100%;
-    height: 50vh;
+.img-local {
+    max-width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 /* ESTILOS AL FOOTER */
-
-footer {
-    background-color: #5E0D26;
-    color: #FAF7EE;
-}
 
 .container {
     text-align: center;
