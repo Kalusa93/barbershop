@@ -2,11 +2,58 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Mohave, sans-serif;
 }
 
-body {
-    font-family: Mohave, sans-serif;
-    /* color: #FAF7EE; */
+h1 {
+    padding-bottom: 30px;
+}
+
+h1, .h2-map {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.info-contacto-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.info-contacto, .barbertruck {
+    width: 50%;
+}
+
+.info-contacto {
+    padding-left: 100px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.barbertruck {
+    padding-top: 20px;
+}
+
+.img-barbertruck {
+    align-self: center;
+    width: 800px;
+    max-width: 70%;
+    margin-left: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+.map {
+    max-width: 90%;
+    padding-bottom: 20px;
 }
 
 /* ESTILOS AL HEADER */
@@ -73,39 +120,26 @@ body {
     margin-bottom: 250px;
 }
 
-/* MEDIA QUERIES */
-
-@media (min-width: 768px) {
-    .burger {
-        display: none;
+@media (max-width: 768px) {
+    .info-contacto-container {
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
-
-    .nav-bar {
-        display: flex;
-        justify-content: space-around;
+    .info-contacto, .barbertruck {
+        width: 100%;
     }
-
-    .search-bar {
-        display: block;
-        margin: auto 0px;
-        background-color: #F5DEBF;
-        border-radius: 10px;
+    .info-contacto {
+        padding-left: 20px;
     }
+}
 
-    .search-bar input {
+@media (max-width: 500px) {
+    .fa-brands, .fa-solid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fb-link, .ig-link, .wp-link, .gm-link {
+        padding-left: 0;
         font-size: 16px;
-        height: 40px;
-        border: none;
-        border-radius: 10px;
-        background-color: #F5DEBF;
-    }
-
-    .search-bar button {
-        font-size: 16px;
-        width: 40px;
-        height: 40px;    
-        border: none;
-        border-radius: 10px;
-        background-color: #F5DEBF;
     }
 }

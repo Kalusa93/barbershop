@@ -7,42 +7,48 @@
     <%- include('./partials/header.ejs') %>
 
     <main>
-      <div class="top-main">
-        <h1>CONTACTO</h1>
-        <p>
-          Escribinos tus consultas o deja un comentario, te responderemos a la
-          brevedad.
-        </p>
+      <h1>Contacto</h1>
+      <div class="info-contacto-container">
+        <section class="info-contacto">
+          <h2>Información de contacto</h2>
+          <p><strong>Dirección:</strong> Av. Sáenz Peña 550, Santiago del Estero Capital</p>
+          <p><strong>Teléfono:</strong> 0385 402-6471</p>
+          <p><strong>Correo electrónico:</strong> aukany@gmail.com</p>
+        
+          <h2>Horario de atención</h2>
+          <p>Lunes a Sábados de 9:00 a 13:00 hs y 17:00 a 21:00Hs</p>
+
+          <div class="redes">
+            <h2>Nuestras redes</h2>
+            <div>
+              <a href="https://www.facebook.com/profile.php?id=100082290953658" class="fa-brands fa-facebook"></a>
+              <a href="https://www.facebook.com/profile.php?id=100082290953658" class="fb-link">facebook.com/aukanybarberia</a>
+            </div>
+            <div>
+              <a href="https://instagram.com/aukany_barberia" class="fa-brands fa-instagram"></a>
+            <a href="https://www.instagram.com/aukany_barberia/" class="ig-link">instagram.com/aukany_barberia</a>
+            </div>
+            <div>
+              <a href="https://wa.me/3854026471" class="fa-brands fa-whatsapp"></a>
+            <a href="https://wa.me/3854026471" class="wp-link">+543854026471</a>
+            </div>
+          </div>
+          
+      </section>
+
+      <div class="barbertruck">
+        <img src="/images/barbertruck2.png" alt="barbertruck" class="img-barbertruck">
       </div>
-
-      <div class="form-consulta">
-        <form action="" method="">
-          <label for="nombre">NOMBRE Y APELLIDO: </label>
-          <input type="text" name="nombre" id="nombre" required />
-
-          <label for="email">E-MAIL: </label>
-          <input type="email" name="email" id="email" required />
-
-          <label for="select">SELECCIONE: </label>
-          <select name="select" id="select" required>
-            <option value="consulta">Consulta</option>
-            <option value="comercial">Comercial</option>
-            <option value="trabajo">Trabajá con nosotros</option>
-          </select>
-
-          <label for="comentario">DEJE SU COMENTARIO: </label>
-          <textarea
-            name="comentario"
-            id="comentario"
-            cols="30"
-            rows="15"
-            required
-          ></textarea>
-
-          <button type="submit" class="submit">ENVIAR</button>
-        </form>
       </div>
-    </main>
+      
+      <h2 class="h2-map">Mapa de ubicación</h2>
+      <section class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14118.420730470585!2d-
+          64.2684613!3d-27.791137!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b526d0e40e03f%3A0xacfb471ceea29d1f!2sBarberia%20Aukany!5e0!3m2!1ses-419!2sar!4v1706923409396!5m2!1ses-419!2sar" 
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" 
+          allowfullscreen="" loading="lazy" class="map"></iframe>
+      </section>
+  </main>
 
     <%- include('./partials/footer.ejs') %>
   </body>
