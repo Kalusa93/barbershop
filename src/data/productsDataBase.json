@@ -22,5 +22,29 @@
    "1707177128625-pulga1.png",
    "1707177128628-pulga2.png"
   ]
+ },
+ {
+  "id": 12,
+  "name": "Luis Ingolotti",
+  "type": "low fade",
+  "barber": "Chiky",
+  "description": "low fade de 0 a 2",
+  "date": "27/01/2024",
+  "images": [
+   "1707181355070-ingolotti1.png",
+   "1707181355074-ingolotti2.png"
+  ]
+ },
+ {
+  "id": 13,
+  "name": "Brandon Robinson",
+  "type": "corto",
+  "barber": "Chiky",
+  "description": "corto con maquina",
+  "date": "7/2/2024",
+  "images": [
+   "1707407306952-brandon1.png",
+   "1707407306953-brandon2.png"
+  ]
  }
 ]
