@@ -1,17 +1,5 @@
 [
  {
-  "id": 10,
-  "name": "Lucas Alfonso Leguizamón",
-  "type": "low fade",
-  "barber": "Pichy",
-  "description": "low fade de 0 a 1",
-  "date": "29/01/2024",
-  "images": [
-   "1707171349346-WhatsApp Image 2024-02-03 at 12.03.24.jpeg",
-   "1707171349349-2016-Chevy-Cruze-Body-Structure-UHSS-Steel-Extrication.png"
-  ]
- },
- {
   "id": 11,
   "name": "Pulga Rodriguez",
   "type": "tradicional",
@@ -45,6 +33,52 @@
   "images": [
    "1707407306952-brandon1.png",
    "1707407306953-brandon2.png"
+  ]
+ },
+ {
+  "id": 14,
+  "name": "Cristian Ocampos",
+  "type": "low fade ",
+  "barber": "Chiky",
+  "description": "low fade de 0 a 1 con marca",
+  "date": "27/01/2024",
+  "images": [
+   "1707408609851-ocampos1.png"
+  ]
+ },
+ {
+  "id": 15,
+  "name": "Seba Valdez",
+  "type": "low fade",
+  "barber": "Pichy",
+  "description": "low fade de 0 a 2",
+  "date": "25/01/2024",
+  "images": [
+   "1707408764765-sebavaldez1.png",
+   "1707408764771-sebavaldez2.png"
+  ]
+ },
+ {
+  "id": 16,
+  "name": "Braian Leizza",
+  "type": "low fade",
+  "barber": "Pichy",
+  "description": "low fade de 0 a 2",
+  "date": "18/01/2024",
+  "images": [
+   "1707408923281-braianleizza.png"
+  ]
+ },
+ {
+  "id": 17,
+  "name": "Gonzalo Alves",
+  "type": "low fade",
+  "barber": "Chiky",
+  "description": "low fade de 0 a 2",
+  "date": "27/01/2024",
+  "images": [
+   "1707409049576-gonzaloalves1.png",
+   "1707409049585-gonzaloalves2.png"
   ]
  }
 ]
