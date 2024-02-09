@@ -10,12 +10,10 @@
       <section>
         <div class="products">
           <% products.forEach((product)=> { %>
+            <% let firstImage = product.images.length > 0 ? product.images[0] : 'default-image.png'; %>
           <a href="/products/detail/<%=product.id %>" class="main-article">
             <div class="image-article">
-              <img
-                src="/images/products/<%= product.image %>"
-                alt="Catena Zapata"
-              />
+              <img src="/images/products/<%= firstImage %>" class="img-article"/>
             </div>
             <div class="details-article">
               <h4><%= product.name %></h4>
@@ -23,7 +21,7 @@
                 <strong>Tipo de corte: </strong>
                 <%= product.type %>
               </p>
-              <p class="uva">
+              <p class="barber">
                 <strong>Peluquero: </strong>
                 <%= product.barber %>
               </p>
