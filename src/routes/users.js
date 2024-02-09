@@ -7,8 +7,8 @@ const validateLogin = require('../middlewares/validateLoginMiddleware');
 const validateRegister = require('../middlewares/validateRegisterMiddleware');
 const authMiddleware = require('../middlewares/authMiddleware');
 //ADD USER
-//router.get('/register', guestMiddleware, controller.register);
-//router.post('/register', upload2.single('image'), validateRegister, controller.addUser);
+router.get('/register', guestMiddleware, controller.register);
+router.post('/register', upload2.single('image'), validateRegister, controller.addUser);
 
 //LOGIN USER
 router.get('/login', guestMiddleware, controller.login);

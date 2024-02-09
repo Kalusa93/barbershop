@@ -25,5 +25,14 @@
   "tel": "5345345435",
   "password": "$2a$10$r32GhWq06pYQgo0ibdy8XOMvj1jETU5cscmtGceNpnwlw7MCU3bw6",
   "image": "1705704966441-messi.jpg"
+ },
+ {
+  "id": 4,
+  "name": "Pichy",
+  "surname": "Aukany",
+  "email": "pichy@aukany.com",
+  "tel": "385402647",
+  "password": "$2a$10$WFNOJgLGLmupJQKUVdNtNef2GMFMVBRowwfot7dfyEPs4tPETz5iO",
+  "image": "1707451890491-Screenshot_20240209_005820_Instagram.jpg"
  }
 ]
