@@ -35,6 +35,18 @@ main section a img {
     padding-right: 20px;
 }
 
+h4 {
+    padding-top: 20px;
+}
+
+.image-article {
+    margin-bottom: 0;
+}
+
+.details-article {
+    margin-top: 0;
+}
+
 .details-article h4, .price {
     text-align: center;
     padding-bottom: 5px;
@@ -43,6 +55,10 @@ main section a img {
 .details-article .type, .uva, .origin {
     font-size: 14px;
     padding: 0px 10px;
+}
+
+.img-article {
+    padding-top: 20px;
 }
 
 .prod-search-container {
