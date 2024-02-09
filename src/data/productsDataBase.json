@@ -1,6 +1,6 @@
 [
  {
-  "id": 11,
+  "id": 1,
   "name": "Pulga Rodriguez",
   "type": "tradicional",
   "barber": "chiky",
@@ -12,7 +12,7 @@
   ]
  },
  {
-  "id": 12,
+  "id": 2,
   "name": "Luis Ingolotti",
   "type": "low fade",
   "barber": "Chiky",
@@ -24,7 +24,7 @@
   ]
  },
  {
-  "id": 13,
+  "id": 3,
   "name": "Brandon Robinson",
   "type": "corto",
   "barber": "Chiky",
@@ -36,7 +36,7 @@
   ]
  },
  {
-  "id": 14,
+  "id": 4,
   "name": "Cristian Ocampos",
   "type": "low fade ",
   "barber": "Chiky",
@@ -47,7 +47,7 @@
   ]
  },
  {
-  "id": 15,
+  "id": 5,
   "name": "Seba Valdez",
   "type": "low fade",
   "barber": "Pichy",
@@ -59,7 +59,7 @@
   ]
  },
  {
-  "id": 16,
+  "id": 6,
   "name": "Braian Leizza",
   "type": "low fade",
   "barber": "Pichy",
@@ -70,7 +70,7 @@
   ]
  },
  {
-  "id": 17,
+  "id": 7,
   "name": "Gonzalo Alves",
   "type": "low fade",
   "barber": "Chiky",

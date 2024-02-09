@@ -10,24 +10,6 @@
  },
  {
   "id": 2,
-  "name": "Como Tan Muchachos",
-  "surname": "dadasdas",
-  "email": "falso124@gmail.com",
-  "tel": "5345345435",
-  "password": "$2a$10$HWZlEZeMLbhXPEJEYnaBCuln1wrWkw/pUFqc2EVxNCeOEqcvz2N1m",
-  "image": "1705704628539-descarga (1).jpeg"
- },
- {
-  "id": 3,
-  "name": "Messi",
-  "surname": "Messi",
-  "email": "falso123@gmail.com",
-  "tel": "5345345435",
-  "password": "$2a$10$r32GhWq06pYQgo0ibdy8XOMvj1jETU5cscmtGceNpnwlw7MCU3bw6",
-  "image": "1705704966441-messi.jpg"
- },
- {
-  "id": 4,
   "name": "Pichy",
   "surname": "Aukany",
   "email": "pichy@aukany.com",
