@@ -10,18 +10,6 @@ const productsController = {
         res.render('products/products', {products, title: 'Todos los productos'});
     },
 
-    national: (req, res) => {
-        let national = products.filter( product => product.category == 'national')
-
-        res.render('products/products', {products: national, title: 'National'});
-    },
-
-    imported: (req, res) => {
-        let imported = products.filter( product => product.category == 'international')
-
-        res.render('products/products', {products: imported, title: 'Imported'});
-    },
-
     detail: (req, res) => {
         const id = req.params.id;
 

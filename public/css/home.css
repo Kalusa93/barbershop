@@ -16,12 +16,47 @@ main {
     margin: 0 auto;
 }
 
-.banner {
-    width: 100%;
-
+h1, h2, p {
+    text-align: center;
 }
 
-.banner img {
-    width: 100%;
-    padding: 20px 0px;
+h1 {
+    padding-top: 20px;
+}
+
+.local-container, .presentacion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.local2 {
+    width: 80%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.local-container {
+    margin-bottom: 20px;
+}
+
+.fa-solid.fa-scissors {
+    width: 30%;
+    font-size: 200px;
+    text-align: center;
+}
+
+.presentacion {
+    width: 60%;
+    font-size: 18px;
+}
+
+@media (max-width: 500px) {
+    .presentacion-container {
+        flex-wrap: wrap;
+    }
+    .presentacion, .fa-solid.fa-scissors, .local2 {
+        width: 100%;
+    }
 }
