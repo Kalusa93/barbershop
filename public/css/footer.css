@@ -64,8 +64,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
   background-color: #111111;
+}
+
+p {
+  margin-bottom: 0;
+  padding: 10px 0;
 }
 
 /* ============= */

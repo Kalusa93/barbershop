@@ -7,10 +7,6 @@ const authMiddleware = require('../middlewares/authMiddleware')
 // GET PRODUCTS
 router.get('/', controller.products);
 
-router.get('/national', controller.national);
-
-router.get('/imported', controller.imported);
-
 // DETAIL PRODUCTS
 router.get('/detail/:id', controller.detail);
 
