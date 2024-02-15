@@ -6,6 +6,8 @@ const app = express();
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
 const userLogged = require("../src/middlewares/userLoggedMiddleware");
+const mongoose = require('mongoose')
+const Product = require('./models/productModel')
 
 //Sección de Configuración de Carpeta de Archivos Estáticos
 app.use(express.static(path.join(__dirname, "..", "public")));
@@ -22,7 +24,7 @@ app.use(methodOverride("_method"));
 
 app.use(
 	session({
-		secret: "Venner secret",
+		secret: "aukany secret",
 		resave: false,
 		saveUninitialized: false,
 	})
@@ -49,6 +51,17 @@ app.use((req, res, next) => {
 });
 
 //Sección de levantar el Server
-app.listen(3000, () => {
-	console.log("Servidor corriendo en http://localhost:3000/");
-});
+//app.listen(3000, () => {
+//	console.log("Servidor corriendo en http://localhost:3000/");
+//});
+
+mongoose.
+connect(`mongodb+srv://lucaslegui21:37530791lukas@barbershop.9ixfa1q.mongodb.net/?retryWrites=true&w=majority`)
+.then(() => {
+    console.log('Connected to MongoDB')
+    app.listen(3000, ()=> {
+        console.log(`Node API app is running on port 3000`)
+    });
+}).catch((error) => {
+    console.log(error)
+})
