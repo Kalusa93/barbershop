@@ -7,12 +7,12 @@ const session = require("express-session");
 const cookieParser = require("cookie-parser");
 const userLogged = require("../src/middlewares/userLoggedMiddleware");
 const { connectToDb, getDb } = require('./db')
-const fs = require("fs");
 
-const productsFilePath = path.join(__dirname, "/data/productsDataBase.json");
-
+app.use(express.json())
 
 //DB connection
+let db
+
 connectToDb((err) => {
 	if(!err) {
 		app.listen(3000, () => {
@@ -23,17 +23,30 @@ connectToDb((err) => {
 })
 
 app.get('/products', (req, res) => {
-	let products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+	let products = []
 
-	db.collection('aukany')
+	db.collection('aukany2')
 		.find()
-		.sort({author: 1})
+		.sort({id: 1})
 		.forEach(product => products.push(product))
 		.then(() => {
 			res.status(200).json(products)
 		})
 		.catch(() => {
 			res.status(500).json({error: 'No se pudo obtener los documentos'})
+		})
+})
+
+app.post('/products', (req, res) => {
+	let product = req.body
+
+	db.collection('aukany2')
+		.insertOne(product)
+		.then((result) => {
+			res.status(201).json(result)
+		})
+		.catch(err => {
+			res.status(500).json({error: 'No se pudo crear el documento'})
 		})
 })
 
