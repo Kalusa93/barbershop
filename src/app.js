@@ -22,7 +22,7 @@ connectToDb((err) => {
 	}
 })
 
-app.get('/products', (req, res) => {
+app.get('/products/products', (req, res) => {
 	let products = []
 
 	db.collection('aukany2')

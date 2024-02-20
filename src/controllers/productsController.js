@@ -1,21 +1,33 @@
 const fs = require("fs");
-const path = require("path");
-
-const productsFilePath = path.join(__dirname, "../data/productsDataBase.json");
-const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+const { getDb } = require('../db');
+const { ObjectId } = require('mongodb');
 
 const productsController = {
 
-    products: (req, res) => {
-        res.render('products/products', {products, title: 'Todos los productos'});
+    products: async (req, res) => {
+        try {
+            const db = getDb();
+            const products = await db.collection('aukany2').find().sort({ id: 1 }).toArray();
+            res.render('products/products', { products, title: 'Productos' });
+        } catch (error) {
+            console.error(error);
+            res.status(500).send('Error interno del servidor');
+        }
     },
 
-    detail: (req, res) => {
-        const id = req.params.id;
+    detail: async (req, res) => {
 
-        const product = products.find((product) => product.id == id);
-
-        res.render('products/productDetail', {product});
+        try {
+            const db = getDb();
+            const product = await db.collection('aukany2').findOne({_id: new ObjectId(req.params.id)});
+            /* if (!product) {
+                return res.status(404).send('Producto no encontrado');
+            } */
+            res.render('products/productDetail', { product });
+        } catch (error) {
+            console.error(error);
+            res.status(500).send('Error interno del servidor');
+        }
     },
 
     add: (req, res) => {
