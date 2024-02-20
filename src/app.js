@@ -37,6 +37,22 @@ app.get('/products', (req, res) => {
 		})
 })
 
+app.get('/products/:id', (req, res) => {
+
+	if(ObjectId.isValid(req.params.id)) {
+		db.collection('aukany2')
+		.findOne({_id: new ObjectId(req.params.id)})
+		.then(doc => {
+			res.status(200).json(doc)
+		})
+		.catch(err => {
+			res.status(500).json({error: 'No se pudo obtener el documento'})
+		})
+	} else {
+		res.status(500).json({error: 'El id del documento es inválido'})
+	}
+})
+
 app.post('/products', (req, res) => {
 	let product = req.body
 
@@ -80,6 +96,7 @@ const mainRouter = require("./routes/main");
 const productsRouter = require("./routes/products");
 const cartRouter = require("./routes/cart");
 const usersRouter = require("./routes/users");
+const { ObjectId } = require("mongodb");
 
 //Sección de Rutas
 app.use("/", mainRouter);
