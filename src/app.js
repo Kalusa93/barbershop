@@ -6,6 +6,36 @@ const app = express();
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
 const userLogged = require("../src/middlewares/userLoggedMiddleware");
+const { connectToDb, getDb } = require('./db')
+const fs = require("fs");
+
+const productsFilePath = path.join(__dirname, "/data/productsDataBase.json");
+
+
+//DB connection
+connectToDb((err) => {
+	if(!err) {
+		app.listen(3000, () => {
+			console.log("Servidor corriendo en http://localhost:3000/")
+		})
+		db = getDb()
+	}
+})
+
+app.get('/products', (req, res) => {
+	let products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+
+	db.collection('aukany')
+		.find()
+		.sort({author: 1})
+		.forEach(product => products.push(product))
+		.then(() => {
+			res.status(200).json(products)
+		})
+		.catch(() => {
+			res.status(500).json({error: 'No se pudo obtener los documentos'})
+		})
+})
 
 //Sección de Configuración de Carpeta de Archivos Estáticos
 app.use(express.static(path.join(__dirname, "..", "public")));
@@ -22,7 +52,7 @@ app.use(methodOverride("_method"));
 
 app.use(
 	session({
-		secret: "Venner secret",
+		secret: "Aukany secret",
 		resave: false,
 		saveUninitialized: false,
 	})
@@ -49,6 +79,4 @@ app.use((req, res, next) => {
 });
 
 //Sección de levantar el Server
-app.listen(3000, () => {
-	console.log("Servidor corriendo en http://localhost:3000/");
-});
+
